@@ -2,8 +2,9 @@
 # register this as documented at
 #   http://collective-docs.readthedocs.org/en/latest/searching_and_indexing/indexing.html#custom-index-methods
 
+
 from plone.indexer.decorator import indexer
-from Products.ATContentTypes.interface import IATEvent
+from Products.ATContentTypes.interfaces.event import IATEvent
 from Products.ATContentTypes.utils import DT2dt
 
 
