@@ -10,7 +10,7 @@ from Products.ATContentTypes.utils import DT2dt
 
 @indexer(IATEvent)
 def event_days(context, **kw):
-    start = DT2dt(context.getStartDate())
-    end = DT2dt(context.getEndDate())
+    start = DT2dt(context.start())
+    end = DT2dt(context.end())
     delta = end - start
     return delta.days
