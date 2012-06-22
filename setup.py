@@ -5,7 +5,8 @@ VERSION = '0.0.1'
 
 
 setup(
-    author='aclark4life',
+    author='Alex Clark',
+    author_email='aclark@aclark.net',
     entry_points={
         'z3c.autoinclude.plugin': 'target = plone',
     },
