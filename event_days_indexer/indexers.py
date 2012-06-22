@@ -13,4 +13,8 @@ def event_days(context, **kw):
     start = DT2dt(context.start())
     end = DT2dt(context.end())
     delta = end - start
-    return delta.days
+    if delta.days <= 1:
+        return True
+    else:
+        return False
+    #return delta.days
